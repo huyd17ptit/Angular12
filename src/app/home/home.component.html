@@ -1,5 +1,20 @@
 <div class="test">
     <h1>Đây là component home</h1>
     <h2>Chào bạn {{name}}</h2>
+    <input value="{{name}}">
+    <br>
+    <input [value]="name" title="Đây là {{name}}">
+    <br>
+    <input [value]="name" [title]="'Đây là ' + name">
+</div>
+<div class="test">
+    <h2 *ngIf="age > 18">Bạn quá già rồi!</h2>
+    <h2 *ngIf="age <= 18">Bạn còn trẻ lắm!</h2>
+</div>
+<div class="test">
+    <h2>Đây là component home</h2>
+    <input type="text" [(ngModel)]="name">
+    <h2>Chào bạn {{name}}</h2>
+    <button (click)="resetName()">Reset tên</button>
 </div>
 
