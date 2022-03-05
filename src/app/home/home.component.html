@@ -1,20 +1,9 @@
 <div class="test">
-    <h1>Đây là component home</h1>
-    <h2>Chào bạn {{name}}</h2>
-    <input value="{{name}}">
-    <br>
-    <input [value]="name" title="Đây là {{name}}">
-    <br>
-    <input [value]="name" [title]="'Đây là ' + name">
-</div>
-<div class="test">
-    <h2 *ngIf="age > 18">Bạn quá già rồi!</h2>
-    <h2 *ngIf="age <= 18">Bạn còn trẻ lắm!</h2>
-</div>
-<div class="test">
     <h2>Đây là component home</h2>
-    <input type="text" [(ngModel)]="name">
-    <h2>Chào bạn {{name}}</h2>
-    <button (click)="resetName()">Reset tên</button>
+    <input type="text" [(ngModel)]="age">
+    <h2>Tuổi của bạn là {{age}}</h2>
+    <div *ngIf="age<=18; then tre; else gia"></div>
+    <ng-template #tre><h2>Bạn còn trẻ quá!</h2></ng-template>
+    <ng-template #gia><h2>Bạn đã già rồi!</h2></ng-template>
 </div>
 
