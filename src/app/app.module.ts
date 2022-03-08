@@ -9,6 +9,7 @@ import { AboutComponent } from './about/about.component';
 import { OnSalePipe } from './on-sale.pipe';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HighLightDirective } from './Directives/high-light.directive';
+import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { HighLightDirective } from './Directives/high-light.directive';
     AboutComponent,
     OnSalePipe,
     PageNotFoundComponent,
-    HighLightDirective
+    HighLightDirective,
+    TemplateDrivenFormComponent
   ],
   imports: [
     BrowserModule,
